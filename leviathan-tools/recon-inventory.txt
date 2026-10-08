@@ -1,7 +1,0 @@
-amass
-chisel
-dnsx
-httpx
-naabu
-nuclei
-subfinder

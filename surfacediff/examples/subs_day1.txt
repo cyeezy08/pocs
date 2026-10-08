@@ -1,3 +1,0 @@
-vpn.example.com
-mail.example.com
-dev.example.com
