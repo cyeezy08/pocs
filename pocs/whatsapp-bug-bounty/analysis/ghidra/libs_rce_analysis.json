@@ -1,0 +1,709 @@
+{
+  "total_functions": 345, 
+  "jni_entry_points": [
+    {
+      "address": "0010b164", 
+      "signature": "undefined JNI_OnLoad(void)", 
+      "size": 8, 
+      "name": "JNI_OnLoad"
+    }
+  ], 
+  "webp_functions": [
+    {
+      "address": "0010d450", 
+      "size": 16, 
+      "name": "WebPDemuxGetI"
+    }, 
+    {
+      "address": "0010d460", 
+      "size": 16, 
+      "name": "WebPDemuxGetFrame"
+    }, 
+    {
+      "address": "0010d470", 
+      "size": 16, 
+      "name": "WebPDemuxNextFrame"
+    }, 
+    {
+      "address": "0010d480", 
+      "size": 16, 
+      "name": "WebPDemuxReleaseIterator"
+    }, 
+    {
+      "address": "0010d500", 
+      "size": 16, 
+      "name": "WebPDemuxInternal"
+    }, 
+    {
+      "address": "0010d510", 
+      "size": 16, 
+      "name": "WebPInitDecoderConfigInternal"
+    }, 
+    {
+      "address": "0010d520", 
+      "size": 16, 
+      "name": "WebPGetFeaturesInternal"
+    }, 
+    {
+      "address": "0010d570", 
+      "size": 16, 
+      "name": "WebPDecode"
+    }, 
+    {
+      "address": "0010d580", 
+      "size": 16, 
+      "name": "WebPGetInfo"
+    }, 
+    {
+      "address": "0010d6b0", 
+      "size": 16, 
+      "name": "w2c_0x24webp0x2Ewasm_webp_decode_premul_helper"
+    }, 
+    {
+      "address": "0010d6c0", 
+      "size": 16, 
+      "name": "w2c_0x24webp0x2Ewasm_webp_free_premul_result"
+    }, 
+    {
+      "address": "0010d700", 
+      "size": 16, 
+      "name": "w2c_0x24webp0x2Ewasm_free"
+    }, 
+    {
+      "address": "0010d740", 
+      "size": 16, 
+      "name": "w2c_0x24webp0x2Ewasm_memory"
+    }, 
+    {
+      "address": "0010d750", 
+      "size": 16, 
+      "name": "w2c_0x24webp0x2Ewasm_0x5F_indirect_function_table"
+    }, 
+    {
+      "address": "0010d760", 
+      "size": 16, 
+      "name": "wasm2c_0x24webp0x2Ewasm_instantiate"
+    }, 
+    {
+      "address": "0010d770", 
+      "size": 16, 
+      "name": "wasm2c_0x24webp0x2Ewasm_free"
+    }, 
+    {
+      "address": "0010d7d0", 
+      "size": 16, 
+      "name": "w2c_0x24webp0x2Ewasm_malloc"
+    }, 
+    {
+      "address": "00117010", 
+      "size": 1, 
+      "name": "WebPDemuxDelete"
+    }, 
+    {
+      "address": "00117020", 
+      "size": 1, 
+      "name": "WebPDemuxGetI"
+    }, 
+    {
+      "address": "00117028", 
+      "size": 1, 
+      "name": "WebPDemuxGetFrame"
+    }, 
+    {
+      "address": "00117030", 
+      "size": 1, 
+      "name": "WebPDemuxNextFrame"
+    }, 
+    {
+      "address": "00117038", 
+      "size": 1, 
+      "name": "WebPDemuxReleaseIterator"
+    }, 
+    {
+      "address": "00117078", 
+      "size": 1, 
+      "name": "WebPDemuxInternal"
+    }, 
+    {
+      "address": "00117080", 
+      "size": 1, 
+      "name": "WebPInitDecoderConfigInternal"
+    }, 
+    {
+      "address": "00117088", 
+      "size": 1, 
+      "name": "WebPGetFeaturesInternal"
+    }, 
+    {
+      "address": "001170b8", 
+      "size": 1, 
+      "name": "WebPDecode"
+    }, 
+    {
+      "address": "001170c0", 
+      "size": 1, 
+      "name": "WebPGetInfo"
+    }, 
+    {
+      "address": "00117198", 
+      "size": 1, 
+      "name": "w2c_0x24webp0x2Ewasm_webp_decode_premul_helper"
+    }, 
+    {
+      "address": "001171a0", 
+      "size": 1, 
+      "name": "w2c_0x24webp0x2Ewasm_webp_free_premul_result"
+    }, 
+    {
+      "address": "001171c0", 
+      "size": 1, 
+      "name": "w2c_0x24webp0x2Ewasm_free"
+    }, 
+    {
+      "address": "001171e0", 
+      "size": 1, 
+      "name": "w2c_0x24webp0x2Ewasm_memory"
+    }, 
+    {
+      "address": "001171e8", 
+      "size": 1, 
+      "name": "w2c_0x24webp0x2Ewasm_0x5F_indirect_function_table"
+    }, 
+    {
+      "address": "001171f0", 
+      "size": 1, 
+      "name": "wasm2c_0x24webp0x2Ewasm_instantiate"
+    }, 
+    {
+      "address": "001171f8", 
+      "size": 1, 
+      "name": "wasm2c_0x24webp0x2Ewasm_free"
+    }, 
+    {
+      "address": "00117228", 
+      "size": 1, 
+      "name": "w2c_0x24webp0x2Ewasm_malloc"
+    }
+  ], 
+  "language": "AARCH64:LE:64:v8A", 
+  "program": "libstatic-webp.so", 
+  "buffer_vulns": [], 
+  "large_functions": [
+    {
+      "address": "0010c674", 
+      "size": 1308, 
+      "name": "FUN_0010c674"
+    }, 
+    {
+      "address": "001090dc", 
+      "size": 1136, 
+      "name": "FUN_001090dc"
+    }, 
+    {
+      "address": "0010b900", 
+      "size": 784, 
+      "name": "FUN_0010b900"
+    }, 
+    {
+      "address": "0010b214", 
+      "size": 708, 
+      "name": "FUN_0010b214"
+    }, 
+    {
+      "address": "0010ce8c", 
+      "size": 708, 
+      "name": "FUN_0010ce8c"
+    }, 
+    {
+      "address": "0010c13c", 
+      "size": 672, 
+      "name": "FUN_0010c13c"
+    }, 
+    {
+      "address": "0010a420", 
+      "size": 664, 
+      "name": "FUN_0010a420"
+    }, 
+    {
+      "address": "00108b70", 
+      "size": 568, 
+      "name": "FUN_00108b70"
+    }, 
+    {
+      "address": "0010c464", 
+      "size": 516, 
+      "name": "FUN_0010c464"
+    }, 
+    {
+      "address": "0010b4d8", 
+      "size": 476, 
+      "name": "FUN_0010b4d8"
+    }, 
+    {
+      "address": "00109f60", 
+      "size": 436, 
+      "name": "FUN_00109f60"
+    }, 
+    {
+      "address": "0010bf2c", 
+      "size": 432, 
+      "name": "FUN_0010bf2c"
+    }, 
+    {
+      "address": "0010b6f4", 
+      "size": 352, 
+      "name": "FUN_0010b6f4"
+    }, 
+    {
+      "address": "0010ac7c", 
+      "size": 332, 
+      "name": "FUN_0010ac7c"
+    }, 
+    {
+      "address": "0010d1e4", 
+      "size": 292, 
+      "name": "FUN_0010d1e4"
+    }, 
+    {
+      "address": "0010b048", 
+      "size": 284, 
+      "name": "FUN_0010b048"
+    }, 
+    {
+      "address": "00109824", 
+      "size": 244, 
+      "name": "FUN_00109824"
+    }, 
+    {
+      "address": "0010993c", 
+      "size": 232, 
+      "name": "FUN_0010993c"
+    }, 
+    {
+      "address": "00109e68", 
+      "size": 208, 
+      "name": "FUN_00109e68"
+    }
+  ], 
+  "gif_functions": [], 
+  "dangerous_calls": [
+    {
+      "address": "0010d6a0", 
+      "sample_callers": [
+        "0010c988"
+      ], 
+      "caller_count": 1, 
+      "size": 16, 
+      "name": "malloc"
+    }, 
+    {
+      "address": "0010d800", 
+      "sample_callers": [
+        "0010c078", 
+        "0010c090", 
+        "0010c0a0"
+      ], 
+      "caller_count": 3, 
+      "size": 16, 
+      "name": "free"
+    }, 
+    {
+      "address": "0010d880", 
+      "sample_callers": [
+        "00108e80", 
+        "00108eac", 
+        "0010926c", 
+        "001099a0", 
+        "0010c054", 
+        "0010c824", 
+        "0010c9a0", 
+        "00108cdc", 
+        "0010d034"
+      ], 
+      "caller_count": 9, 
+      "size": 16, 
+      "name": "memcpy"
+    }, 
+    {
+      "address": "0010d890", 
+      "sample_callers": [
+        "00109360", 
+        "0010938c", 
+        "001093ac", 
+        "001093d0", 
+        "00108d34", 
+        "0010c518", 
+        "00108e44"
+      ], 
+      "caller_count": 7, 
+      "size": 16, 
+      "name": "memmove"
+    }, 
+    {
+      "address": "0010d8c0", 
+      "sample_callers": [
+        "0010c200"
+      ], 
+      "caller_count": 1, 
+      "size": 16, 
+      "name": "memset"
+    }, 
+    {
+      "address": "00117190", 
+      "sample_callers": [
+        "00111d50", 
+        "0010d6ac"
+      ], 
+      "caller_count": 2, 
+      "size": 1, 
+      "name": "malloc"
+    }, 
+    {
+      "address": "00117248", 
+      "sample_callers": [
+        "00111e00", 
+        "0010d80c"
+      ], 
+      "caller_count": 2, 
+      "size": 1, 
+      "name": "free"
+    }, 
+    {
+      "address": "00117288", 
+      "sample_callers": [
+        "00111e40", 
+        "0010d88c"
+      ], 
+      "caller_count": 2, 
+      "size": 1, 
+      "name": "memcpy"
+    }, 
+    {
+      "address": "00117290", 
+      "sample_callers": [
+        "00111e48", 
+        "0010d89c"
+      ], 
+      "caller_count": 2, 
+      "size": 1, 
+      "name": "memmove"
+    }, 
+    {
+      "address": "001172a8", 
+      "sample_callers": [
+        "00111e60", 
+        "0010d8cc"
+      ], 
+      "caller_count": 2, 
+      "size": 1, 
+      "name": "memset"
+    }
+  ], 
+  "mp4_functions": [], 
+  "format_strings": [
+    {
+      "address": "00100fb5", 
+      "value": "u8\"WebPDemuxDelete"
+    }, 
+    {
+      "address": "00100fff", 
+      "value": "u8\"WebPDemuxGetI"
+    }, 
+    {
+      "address": "0010100d", 
+      "value": "u8\"WebPDemuxGetFrame"
+    }, 
+    {
+      "address": "0010101f", 
+      "value": "u8\"WebPDemuxNextFrame"
+    }, 
+    {
+      "address": "00101032", 
+      "value": "u8\"WebPDemuxReleaseIterator"
+    }, 
+    {
+      "address": "0010116b", 
+      "value": "u8\"WebPDemuxInternal"
+    }, 
+    {
+      "address": "0010117d", 
+      "value": "u8\"WebPInitDecoderConfigInternal"
+    }, 
+    {
+      "address": "0010119b", 
+      "value": "u8\"WebPGetFeaturesInternal"
+    }, 
+    {
+      "address": "0010124d", 
+      "value": "u8\"WebPDecode"
+    }, 
+    {
+      "address": "00101258", 
+      "value": "u8\"WebPGetInfo"
+    }, 
+    {
+      "address": "00101293", 
+      "value": "u8\"__wrap___cxa_allocate_exception"
+    }, 
+    {
+      "address": "001012cf", 
+      "value": "u8\"__wrap__ZNSt11logic_errorC2EPKc"
+    }, 
+    {
+      "address": "001012ef", 
+      "value": "u8\"__wrap__ZNSt20bad_array_new_lengthC1Ev"
+    }, 
+    {
+      "address": "00101346", 
+      "value": "u8\"__wrap___cxa_free_exception"
+    }, 
+    {
+      "address": "0010138f", 
+      "value": "u8\"__wrap__ZTISt20bad_array_new_length"
+    }, 
+    {
+      "address": "001013e0", 
+      "value": "u8\"__wrap__ZNSt12length_errorD1Ev"
+    }, 
+    {
+      "address": "00101433", 
+      "value": "u8\"__wrap__ZTISt12length_error"
+    }, 
+    {
+      "address": "0010144f", 
+      "value": "u8\"__wrap__ZTVSt12length_error"
+    }, 
+    {
+      "address": "0010147e", 
+      "value": "u8\"__wrap__ZNSt20bad_array_new_lengthD1Ev"
+    }, 
+    {
+      "address": "0010152b", 
+      "value": "u8\"malloc"
+    }, 
+    {
+      "address": "00101532", 
+      "value": "u8\"w2c_0x24webp0x2Ewasm_webp_decode_premul_helper"
+    }, 
+    {
+      "address": "00101561", 
+      "value": "u8\"w2c_0x24webp0x2Ewasm_webp_free_premul_result"
+    }, 
+    {
+      "address": "001015ef", 
+      "value": "u8\"w2c_0x24webp0x2Ewasm_free"
+    }, 
+    {
+      "address": "0010162d", 
+      "value": "u8\"w2c_0x24webp0x2Ewasm_memory"
+    }, 
+    {
+      "address": "00101649", 
+      "value": "u8\"w2c_0x24webp0x2Ewasm_0x5F_indirect_function_table"
+    }, 
+    {
+      "address": "0010167b", 
+      "value": "u8\"wasm2c_0x24webp0x2Ewasm_instantiate"
+    }, 
+    {
+      "address": "0010169f", 
+      "value": "u8\"wasm2c_0x24webp0x2Ewasm_free"
+    }, 
+    {
+      "address": "00101741", 
+      "value": "u8\"w2c_0x24webp0x2Ewasm_malloc"
+    }, 
+    {
+      "address": "001017c4", 
+      "value": "u8\"free"
+    }, 
+    {
+      "address": "0010181d", 
+      "value": "u8\"memcpy"
+    }, 
+    {
+      "address": "0010182c", 
+      "value": "u8\"__stack_chk_fail"
+    }, 
+    {
+      "address": "00101864", 
+      "value": "u8\"__emutls_v._ZGVZN8whatsapp8security6detail18threadLocalSandboxINS0_14LibwebpSandboxEEERT_vE8instance"
+    }, 
+    {
+      "address": "001018c9", 
+      "value": "u8\"__emutls_v._ZZN8whatsapp8security6detail18threadLocalSandboxINS0_14LibwebpSandboxEEERT_vE8instance"
+    }, 
+    {
+      "address": "00101980", 
+      "value": "u8\"libstatic-webp.so"
+    }, 
+    {
+      "address": "00102eb0", 
+      "value": "Malloc returned pointer outside the sandbox memory"
+    }, 
+    {
+      "address": "00102fa1", 
+      "value": "nativeDecodeByteArray"
+    }, 
+    {
+      "address": "00102fb7", 
+      "value": "Called memcpy for memory larger than the sandbox"
+    }, 
+    {
+      "address": "0010300a", 
+      "value": "nativeGetFrameCount"
+    }, 
+    {
+      "address": "0010302e", 
+      "value": "nativeGetYOffset"
+    }, 
+    {
+      "address": "0010303f", 
+      "value": "nativeGetXOffset"
+    }, 
+    {
+      "address": "00103050", 
+      "value": "ByteBuffer must be direct"
+    }, 
+    {
+      "address": "0010307d", 
+      "value": "nativeGetFrameDurations"
+    }, 
+    {
+      "address": "001030a6", 
+      "value": "Decode error unlocking pixels"
+    }, 
+    {
+      "address": "001030c4", 
+      "value": "Decode error locking pixels"
+    }, 
+    {
+      "address": "001030e0", 
+      "value": "nativeGetSizeInBytes"
+    }, 
+    {
+      "address": "0010318c", 
+      "value": "Failed to create demuxer"
+    }, 
+    {
+      "address": "001031a5", 
+      "value": "Performing memory operation memset/memcpy on a null pointer"
+    }, 
+    {
+      "address": "001031e1", 
+      "value": "nativeCreateFromDirectByteBuffer"
+    }, 
+    {
+      "address": "00103202", 
+      "value": "libstatic-webp"
+    }, 
+    {
+      "address": "00103229", 
+      "value": "libstatic-webp.so"
+    }, 
+    {
+      "address": "00103268", 
+      "value": "java/io/InputStream"
+    }, 
+    {
+      "address": "0010327c", 
+      "value": "nativeDecodeStream"
+    }, 
+    {
+      "address": "0010328f", 
+      "value": "com/facebook/webpsupport/WebpBitmapFactoryImpl"
+    }, 
+    {
+      "address": "0010332a", 
+      "value": "setBitmapSize"
+    }, 
+    {
+      "address": "00103338", 
+      "value": "Size must be non-negative"
+    }, 
+    {
+      "address": "00103360", 
+      "value": "unable to get frame"
+    }, 
+    {
+      "address": "00103374", 
+      "value": "nativeGetFrame"
+    }, 
+    {
+      "address": "00103383", 
+      "value": "nativeIsBlendWithPreviousFrame"
+    }, 
+    {
+      "address": "001033a2", 
+      "value": "nativeRenderFrame"
+    }, 
+    {
+      "address": "001033b4", 
+      "value": "com/facebook/animated/webp/WebPFrame"
+    }, 
+    {
+      "address": "001033d9", 
+      "value": "com/facebook/animated/webp/WebPImage"
+    }, 
+    {
+      "address": "00103425", 
+      "value": "WebP sandbox: failed to resolve sWebPSandboxEnabled field"
+    }, 
+    {
+      "address": "0010348c", 
+      "value": "WebPGetFeatures failed"
+    }, 
+    {
+      "address": "001034a3", 
+      "value": "WebPInitDecoderConfig failed"
+    }, 
+    {
+      "address": "001034c0", 
+      "value": "sWebPSandboxEnabled"
+    }, 
+    {
+      "address": "001034d9", 
+      "value": "sandboxed WebP decode failed: status=%d"
+    }, 
+    {
+      "address": "00103501", 
+      "value": "Failed to decode frame. VP8StatusCode: %d"
+    }, 
+    {
+      "address": "00103632", 
+      "value": "(Ljava/io/InputStream;Landroid/graphics/BitmapFactory$Options;F[B)Landroid/graphics/Bitmap;"
+    }, 
+    {
+      "address": "001036d4", 
+      "value": "(I)Lcom/facebook/animated/webp/WebPFrame;"
+    }, 
+    {
+      "address": "001036fe", 
+      "value": "(JI)Lcom/facebook/animated/webp/WebPImage;"
+    }, 
+    {
+      "address": "00103729", 
+      "value": "(Ljava/nio/ByteBuffer;)Lcom/facebook/animated/webp/WebPImage;"
+    }, 
+    {
+      "address": "001037d7", 
+      "value": "18WebPDemuxerWrapper"
+    }, 
+    {
+      "address": "001037ec", 
+      "value": "NSt6__ndk120__shared_ptr_pointerIP18WebPDemuxerWrapperNS_10shared_ptrIS1_E27__shared_ptr_default_deleteIS1_S1_EENS_9allocatorIS1_EEEE"
+    }, 
+    {
+      "address": "00103872", 
+      "value": "NSt6__ndk110shared_ptrI18WebPDemuxerWrapperE27__shared_ptr_default_deleteIS1_S1_EE"
+    }, 
+    {
+      "address": ".shstrtab::00000070", 
+      "value": "u8\".eh_frame_hdr"
+    }, 
+    {
+      "address": ".shstrtab::000000d2", 
+      "value": "u8\".eh_frame"
+    }
+  ]
+}

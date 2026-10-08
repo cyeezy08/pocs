@@ -1,0 +1,939 @@
+{
+  "total_functions": 621, 
+  "media_related": [
+    {
+      "address": "0010bad0", 
+      "signature": "undefined JNI_OnLoad(void)", 
+      "param_count": 0, 
+      "body_size": 5, 
+      "name": "JNI_OnLoad"
+    }, 
+    {
+      "address": "0010cf72", 
+      "signature": "undefined Java_com_facebook_superpack_AssetDecompressor_testDecompressorLibraryUsable(void)", 
+      "param_count": 0, 
+      "body_size": 36, 
+      "name": "Java_com_facebook_superpack_AssetDecompressor_testDecompressorLibraryUsable"
+    }, 
+    {
+      "address": "00136fd0", 
+      "signature": "undefined AAsset_close(void)", 
+      "param_count": 0, 
+      "body_size": 6, 
+      "name": "AAsset_close"
+    }, 
+    {
+      "address": "00136fe0", 
+      "signature": "undefined AAssetManager_fromJava(void)", 
+      "param_count": 0, 
+      "body_size": 6, 
+      "name": "AAssetManager_fromJava"
+    }, 
+    {
+      "address": "00136ff0", 
+      "signature": "undefined AAssetManager_open(void)", 
+      "param_count": 0, 
+      "body_size": 6, 
+      "name": "AAssetManager_open"
+    }, 
+    {
+      "address": "00137000", 
+      "signature": "undefined AAsset_openFileDescriptor(void)", 
+      "param_count": 0, 
+      "body_size": 6, 
+      "name": "AAsset_openFileDescriptor"
+    }, 
+    {
+      "address": "001370d0", 
+      "signature": "undefined dlopen(void)", 
+      "param_count": 0, 
+      "body_size": 6, 
+      "name": "dlopen"
+    }, 
+    {
+      "address": "001370e0", 
+      "signature": "undefined android_dlopen_ext(void)", 
+      "param_count": 0, 
+      "body_size": 6, 
+      "name": "android_dlopen_ext"
+    }, 
+    {
+      "address": "001370f0", 
+      "signature": "undefined dlsym(void)", 
+      "param_count": 0, 
+      "body_size": 6, 
+      "name": "dlsym"
+    }, 
+    {
+      "address": "001371b0", 
+      "signature": "int pthread_mutex_lock(pthread_mutex_t * __mutex)", 
+      "param_count": 1, 
+      "body_size": 6, 
+      "name": "pthread_mutex_lock"
+    }, 
+    {
+      "address": "001371c0", 
+      "signature": "int pthread_mutex_unlock(pthread_mutex_t * __mutex)", 
+      "param_count": 1, 
+      "body_size": 6, 
+      "name": "pthread_mutex_unlock"
+    }, 
+    {
+      "address": "001372f0", 
+      "signature": "int pthread_rwlock_wrlock(pthread_rwlock_t * __rwlock)", 
+      "param_count": 1, 
+      "body_size": 6, 
+      "name": "pthread_rwlock_wrlock"
+    }, 
+    {
+      "address": "00137300", 
+      "signature": "int pthread_rwlock_unlock(pthread_rwlock_t * __rwlock)", 
+      "param_count": 1, 
+      "body_size": 6, 
+      "name": "pthread_rwlock_unlock"
+    }, 
+    {
+      "address": "00137310", 
+      "signature": "int pthread_rwlock_rdlock(pthread_rwlock_t * __rwlock)", 
+      "param_count": 1, 
+      "body_size": 6, 
+      "name": "pthread_rwlock_rdlock"
+    }, 
+    {
+      "address": "00137320", 
+      "signature": "int pthread_mutex_init(pthread_mutex_t * __mutex, pthread_mutexattr_t * __mutexattr)", 
+      "param_count": 2, 
+      "body_size": 6, 
+      "name": "pthread_mutex_init"
+    }, 
+    {
+      "address": "00137330", 
+      "signature": "int pthread_cond_init(pthread_cond_t * __cond, pthread_condattr_t * __cond_attr)", 
+      "param_count": 2, 
+      "body_size": 6, 
+      "name": "pthread_cond_init"
+    }, 
+    {
+      "address": "00137340", 
+      "signature": "int pthread_attr_init(pthread_attr_t * __attr)", 
+      "param_count": 1, 
+      "body_size": 6, 
+      "name": "pthread_attr_init"
+    }, 
+    {
+      "address": "00137350", 
+      "signature": "int pthread_create(pthread_t * __newthread, pthread_attr_t * __attr, __start_routine * __start_routine, void * __arg)", 
+      "param_count": 4, 
+      "body_size": 6, 
+      "name": "pthread_create"
+    }, 
+    {
+      "address": "00137360", 
+      "signature": "int pthread_detach(pthread_t __th)", 
+      "param_count": 1, 
+      "body_size": 6, 
+      "name": "pthread_detach"
+    }, 
+    {
+      "address": "00137370", 
+      "signature": "int pthread_attr_destroy(pthread_attr_t * __attr)", 
+      "param_count": 1, 
+      "body_size": 6, 
+      "name": "pthread_attr_destroy"
+    }, 
+    {
+      "address": "00137380", 
+      "signature": "size_t fread(void * __ptr, size_t __size, size_t __n, FILE * __stream)", 
+      "param_count": 4, 
+      "body_size": 6, 
+      "name": "fread"
+    }, 
+    {
+      "address": "00137390", 
+      "signature": "int pthread_cond_broadcast(pthread_cond_t * __cond)", 
+      "param_count": 1, 
+      "body_size": 6, 
+      "name": "pthread_cond_broadcast"
+    }, 
+    {
+      "address": "001373a0", 
+      "signature": "int pthread_cond_wait(pthread_cond_t * __cond, pthread_mutex_t * __mutex)", 
+      "param_count": 2, 
+      "body_size": 6, 
+      "name": "pthread_cond_wait"
+    }, 
+    {
+      "address": "001373c0", 
+      "signature": "void * mmap(void * __addr, size_t __len, int __prot, int __flags, int __fd, __off_t __offset)", 
+      "param_count": 6, 
+      "body_size": 6, 
+      "name": "mmap"
+    }, 
+    {
+      "address": "001373d0", 
+      "signature": "int pthread_mutex_destroy(pthread_mutex_t * __mutex)", 
+      "param_count": 1, 
+      "body_size": 6, 
+      "name": "pthread_mutex_destroy"
+    }, 
+    {
+      "address": "001373e0", 
+      "signature": "int pthread_cond_destroy(pthread_cond_t * __cond)", 
+      "param_count": 1, 
+      "body_size": 6, 
+      "name": "pthread_cond_destroy"
+    }, 
+    {
+      "address": "001373f0", 
+      "signature": "int pthread_cond_signal(pthread_cond_t * __cond)", 
+      "param_count": 1, 
+      "body_size": 6, 
+      "name": "pthread_cond_signal"
+    }, 
+    {
+      "address": "00137430", 
+      "signature": "undefined __read_chk(void)", 
+      "param_count": 0, 
+      "body_size": 6, 
+      "name": "__read_chk"
+    }, 
+    {
+      "address": "00137440", 
+      "signature": "ssize_t read(int __fd, void * __buf, size_t __nbytes)", 
+      "param_count": 3, 
+      "body_size": 6, 
+      "name": "read"
+    }, 
+    {
+      "address": "00137520", 
+      "signature": "dirent * readdir(DIR * __dirp)", 
+      "param_count": 1, 
+      "body_size": 6, 
+      "name": "readdir"
+    }, 
+    {
+      "address": "00142008", 
+      "signature": "undefined AAsset_close(void)", 
+      "param_count": 0, 
+      "body_size": 1, 
+      "name": "AAsset_close"
+    }, 
+    {
+      "address": "00142010", 
+      "signature": "undefined AAssetManager_fromJava(void)", 
+      "param_count": 0, 
+      "body_size": 1, 
+      "name": "AAssetManager_fromJava"
+    }, 
+    {
+      "address": "00142018", 
+      "signature": "undefined AAssetManager_open(void)", 
+      "param_count": 0, 
+      "body_size": 1, 
+      "name": "AAssetManager_open"
+    }, 
+    {
+      "address": "00142020", 
+      "signature": "undefined AAsset_openFileDescriptor(void)", 
+      "param_count": 0, 
+      "body_size": 1, 
+      "name": "AAsset_openFileDescriptor"
+    }, 
+    {
+      "address": "00142088", 
+      "signature": "undefined dlopen(void)", 
+      "param_count": 0, 
+      "body_size": 1, 
+      "name": "dlopen"
+    }, 
+    {
+      "address": "00142090", 
+      "signature": "undefined android_dlopen_ext(void)", 
+      "param_count": 0, 
+      "body_size": 1, 
+      "name": "android_dlopen_ext"
+    }, 
+    {
+      "address": "00142098", 
+      "signature": "undefined dlsym(void)", 
+      "param_count": 0, 
+      "body_size": 1, 
+      "name": "dlsym"
+    }, 
+    {
+      "address": "001420f8", 
+      "signature": "int pthread_mutex_lock(pthread_mutex_t * __mutex)", 
+      "param_count": 1, 
+      "body_size": 1, 
+      "name": "pthread_mutex_lock"
+    }, 
+    {
+      "address": "00142100", 
+      "signature": "int pthread_mutex_unlock(pthread_mutex_t * __mutex)", 
+      "param_count": 1, 
+      "body_size": 1, 
+      "name": "pthread_mutex_unlock"
+    }, 
+    {
+      "address": "00142198", 
+      "signature": "int pthread_rwlock_wrlock(pthread_rwlock_t * __rwlock)", 
+      "param_count": 1, 
+      "body_size": 1, 
+      "name": "pthread_rwlock_wrlock"
+    }, 
+    {
+      "address": "001421a0", 
+      "signature": "int pthread_rwlock_unlock(pthread_rwlock_t * __rwlock)", 
+      "param_count": 1, 
+      "body_size": 1, 
+      "name": "pthread_rwlock_unlock"
+    }, 
+    {
+      "address": "001421a8", 
+      "signature": "int pthread_rwlock_rdlock(pthread_rwlock_t * __rwlock)", 
+      "param_count": 1, 
+      "body_size": 1, 
+      "name": "pthread_rwlock_rdlock"
+    }, 
+    {
+      "address": "001421b0", 
+      "signature": "int pthread_mutex_init(pthread_mutex_t * __mutex, pthread_mutexattr_t * __mutexattr)", 
+      "param_count": 2, 
+      "body_size": 1, 
+      "name": "pthread_mutex_init"
+    }, 
+    {
+      "address": "001421b8", 
+      "signature": "int pthread_cond_init(pthread_cond_t * __cond, pthread_condattr_t * __cond_attr)", 
+      "param_count": 2, 
+      "body_size": 1, 
+      "name": "pthread_cond_init"
+    }, 
+    {
+      "address": "001421c0", 
+      "signature": "int pthread_attr_init(pthread_attr_t * __attr)", 
+      "param_count": 1, 
+      "body_size": 1, 
+      "name": "pthread_attr_init"
+    }, 
+    {
+      "address": "001421c8", 
+      "signature": "int pthread_create(pthread_t * __newthread, pthread_attr_t * __attr, __start_routine * __start_routine, void * __arg)", 
+      "param_count": 4, 
+      "body_size": 1, 
+      "name": "pthread_create"
+    }, 
+    {
+      "address": "001421d0", 
+      "signature": "int pthread_detach(pthread_t __th)", 
+      "param_count": 1, 
+      "body_size": 1, 
+      "name": "pthread_detach"
+    }, 
+    {
+      "address": "001421d8", 
+      "signature": "int pthread_attr_destroy(pthread_attr_t * __attr)", 
+      "param_count": 1, 
+      "body_size": 1, 
+      "name": "pthread_attr_destroy"
+    }, 
+    {
+      "address": "001421e0", 
+      "signature": "size_t fread(void * __ptr, size_t __size, size_t __n, FILE * __stream)", 
+      "param_count": 4, 
+      "body_size": 1, 
+      "name": "fread"
+    }, 
+    {
+      "address": "001421e8", 
+      "signature": "int pthread_cond_broadcast(pthread_cond_t * __cond)", 
+      "param_count": 1, 
+      "body_size": 1, 
+      "name": "pthread_cond_broadcast"
+    }, 
+    {
+      "address": "001421f0", 
+      "signature": "int pthread_cond_wait(pthread_cond_t * __cond, pthread_mutex_t * __mutex)", 
+      "param_count": 2, 
+      "body_size": 1, 
+      "name": "pthread_cond_wait"
+    }, 
+    {
+      "address": "00142200", 
+      "signature": "void * mmap(void * __addr, size_t __len, int __prot, int __flags, int __fd, __off_t __offset)", 
+      "param_count": 6, 
+      "body_size": 1, 
+      "name": "mmap"
+    }, 
+    {
+      "address": "00142208", 
+      "signature": "int pthread_mutex_destroy(pthread_mutex_t * __mutex)", 
+      "param_count": 1, 
+      "body_size": 1, 
+      "name": "pthread_mutex_destroy"
+    }, 
+    {
+      "address": "00142210", 
+      "signature": "int pthread_cond_destroy(pthread_cond_t * __cond)", 
+      "param_count": 1, 
+      "body_size": 1, 
+      "name": "pthread_cond_destroy"
+    }, 
+    {
+      "address": "00142218", 
+      "signature": "int pthread_cond_signal(pthread_cond_t * __cond)", 
+      "param_count": 1, 
+      "body_size": 1, 
+      "name": "pthread_cond_signal"
+    }, 
+    {
+      "address": "00142238", 
+      "signature": "undefined __read_chk(void)", 
+      "param_count": 0, 
+      "body_size": 1, 
+      "name": "__read_chk"
+    }, 
+    {
+      "address": "00142240", 
+      "signature": "ssize_t read(int __fd, void * __buf, size_t __nbytes)", 
+      "param_count": 3, 
+      "body_size": 1, 
+      "name": "read"
+    }, 
+    {
+      "address": "001422b8", 
+      "signature": "dirent * readdir(DIR * __dirp)", 
+      "param_count": 1, 
+      "body_size": 1, 
+      "name": "readdir"
+    }
+  ], 
+  "language": "x86:LE:64:default", 
+  "all_exports": [
+    {
+      "address": "0010bac0", 
+      "signature": "undefined _FINI_0(void)", 
+      "param_count": 0, 
+      "body_size": 12, 
+      "name": "_FINI_0"
+    }, 
+    {
+      "address": "0010bad0", 
+      "signature": "undefined JNI_OnLoad(void)", 
+      "param_count": 0, 
+      "body_size": 5, 
+      "name": "JNI_OnLoad"
+    }, 
+    {
+      "address": "0010cf72", 
+      "signature": "undefined Java_com_facebook_superpack_AssetDecompressor_testDecompressorLibraryUsable(void)", 
+      "param_count": 0, 
+      "body_size": 36, 
+      "name": "Java_com_facebook_superpack_AssetDecompressor_testDecompressorLibraryUsable"
+    }
+  ], 
+  "program": "libsuperpack.so", 
+  "image_base": "00100000", 
+  "string_references": [
+    {
+      "address": "00101084", 
+      "value": "u8\"AAsset_close"
+    }, 
+    {
+      "address": "00101091", 
+      "value": "u8\"AAssetManager_fromJava"
+    }, 
+    {
+      "address": "001010b4", 
+      "value": "u8\"AAssetManager_open"
+    }, 
+    {
+      "address": "001010c7", 
+      "value": "u8\"AAsset_openFileDescriptor"
+    }, 
+    {
+      "address": "001010ed", 
+      "value": "u8\"JNI_OnLoad_Weak"
+    }, 
+    {
+      "address": "00101169", 
+      "value": "u8\"dlopen"
+    }, 
+    {
+      "address": "00101170", 
+      "value": "u8\"android_dlopen_ext"
+    }, 
+    {
+      "address": "00101183", 
+      "value": "u8\"dlsym"
+    }, 
+    {
+      "address": "001011ac", 
+      "value": "u8\"Java_com_facebook_superpack_AssetDecompressor_testDecompressorLibraryUsable"
+    }, 
+    {
+      "address": "00101221", 
+      "value": "u8\"pthread_mutex_lock"
+    }, 
+    {
+      "address": "00101234", 
+      "value": "u8\"pthread_mutex_unlock"
+    }, 
+    {
+      "address": "001012eb", 
+      "value": "u8\"pthread_rwlock_wrlock"
+    }, 
+    {
+      "address": "00101301", 
+      "value": "u8\"pthread_rwlock_unlock"
+    }, 
+    {
+      "address": "00101317", 
+      "value": "u8\"pthread_rwlock_rdlock"
+    }, 
+    {
+      "address": "0010132d", 
+      "value": "u8\"pthread_mutex_init"
+    }, 
+    {
+      "address": "00101340", 
+      "value": "u8\"pthread_cond_init"
+    }, 
+    {
+      "address": "00101352", 
+      "value": "u8\"pthread_attr_init"
+    }, 
+    {
+      "address": "00101364", 
+      "value": "u8\"pthread_create"
+    }, 
+    {
+      "address": "00101373", 
+      "value": "u8\"pthread_detach"
+    }, 
+    {
+      "address": "00101382", 
+      "value": "u8\"pthread_attr_destroy"
+    }, 
+    {
+      "address": "00101397", 
+      "value": "u8\"fread"
+    }, 
+    {
+      "address": "0010139d", 
+      "value": "u8\"pthread_cond_broadcast"
+    }, 
+    {
+      "address": "001013b4", 
+      "value": "u8\"pthread_cond_wait"
+    }, 
+    {
+      "address": "001013cd", 
+      "value": "u8\"mmap"
+    }, 
+    {
+      "address": "001013d2", 
+      "value": "u8\"pthread_mutex_destroy"
+    }, 
+    {
+      "address": "001013e8", 
+      "value": "u8\"pthread_cond_destroy"
+    }, 
+    {
+      "address": "001013fd", 
+      "value": "u8\"pthread_cond_signal"
+    }, 
+    {
+      "address": "00101425", 
+      "value": "u8\"__read_chk"
+    }, 
+    {
+      "address": "00101430", 
+      "value": "u8\"read"
+    }, 
+    {
+      "address": "0010149d", 
+      "value": "u8\"readdir"
+    }, 
+    {
+      "address": "001014ae", 
+      "value": "u8\"JNI_OnLoad"
+    }, 
+    {
+      "address": "001014e7", 
+      "value": "u8\"libsuperpack.so"
+    }, 
+    {
+      "address": "00102f06", 
+      "value": "decompress_legacy"
+    }, 
+    {
+      "address": "00102f76", 
+      "value": "%s Expected stream %d size %zu, got %zu, input data %p, output data %p, num active %d, halt_all %d, requested_bytes %zu"
+    }, 
+    {
+      "address": "0010301e", 
+      "value": "  Stream ID: %u, UUID: %u, Size: %zu"
+    }, 
+    {
+      "address": "00103071", 
+      "value": "Streams checksum mismatch: %lu vs %lu"
+    }, 
+    {
+      "address": "001030e0", 
+      "value": "Error decompressing superpack streams, expected %u but decompressed %u"
+    }, 
+    {
+      "address": "00103140", 
+      "value": "_superpack_archive_start"
+    }, 
+    {
+      "address": "00103159", 
+      "value": "superpack archive is corrupt"
+    }, 
+    {
+      "address": "00103176", 
+      "value": "re-initializing stream adapters after failed attempt"
+    }, 
+    {
+      "address": "001031b8", 
+      "value": "could not access asset"
+    }, 
+    {
+      "address": "001031cf", 
+      "value": "decompress_with_format"
+    }, 
+    {
+      "address": "001031e6", 
+      "value": "decompress_instructions_with_format"
+    }, 
+    {
+      "address": "0010320a", 
+      "value": "decompress_strings_with_format"
+    }, 
+    {
+      "address": "00103250", 
+      "value": "decompress"
+    }, 
+    {
+      "address": "001032fa", 
+      "value": "Partial decompression is not yet supported for pixels"
+    }, 
+    {
+      "address": "00103330", 
+      "value": "Openbox cannot decompress, models (%d, %d) required but binary is not built with support for some of these models"
+    }, 
+    {
+      "address": "001033bb", 
+      "value": "could not mmap base file %s"
+    }, 
+    {
+      "address": "00103410", 
+      "value": "com/facebook/superpack/AssetDecompressor"
+    }, 
+    {
+      "address": "00103459", 
+      "value": "SP2 decompression failed for a stream with %d error"
+    }, 
+    {
+      "address": "001034ab", 
+      "value": "native_driver"
+    }, 
+    {
+      "address": "00103590", 
+      "value": "could not get asset manager"
+    }, 
+    {
+      "address": "001035ac", 
+      "value": "failed to get output buffer"
+    }, 
+    {
+      "address": "001035c8", 
+      "value": "Failed to read superpacked data to buffer"
+    }, 
+    {
+      "address": "001035f2", 
+      "value": "could not allocate buffer"
+    }, 
+    {
+      "address": "0010360c", 
+      "value": "dlopen failed, decompressed from cached buffer"
+    }, 
+    {
+      "address": "00103666", 
+      "value": "Invalid stream %d checkpoint %d, value %zu exceeds uncompressed size %zu. Please check for errors in the layer below Superpack, e.g. Zip"
+    }, 
+    {
+      "address": "001036ef", 
+      "value": "Entry %d has size 0. Please check for errors in the layer below Superpack, e.g. Zip"
+    }, 
+    {
+      "address": "00103743", 
+      "value": "Error reading Superpack archive (checkpoints) from APK (%d). Please check for errors in the layer below Superpack, e.g. Zip"
+    }, 
+    {
+      "address": "001037bf", 
+      "value": "Error reading Superpack archive (stream header) from APK (%d). Please check for errors in the layer below Superpack, e.g. Zip"
+    }, 
+    {
+      "address": "0010383d", 
+      "value": "Can't allocate %zu bytes for file %s, try to recover with mmap"
+    }, 
+    {
+      "address": "0010388c", 
+      "value": "decompress_from_so"
+    }, 
+    {
+      "address": "0010389f", 
+      "value": "decompress_range_from_so"
+    }, 
+    {
+      "address": "001038b8", 
+      "value": "libsuperpack.so"
+    }, 
+    {
+      "address": "001038fc", 
+      "value": "com/facebook/superpack/AssetDecompressionException"
+    }, 
+    {
+      "address": "00103985", 
+      "value": "could not allocate buffered_java_stream"
+    }, 
+    {
+      "address": "001039ad", 
+      "value": "could not adapt input stream"
+    }, 
+    {
+      "address": "001039ca", 
+      "value": "could not create buffered stream"
+    }, 
+    {
+      "address": "001039eb", 
+      "value": "could not find java/io/OutputStream"
+    }, 
+    {
+      "address": "00103a0f", 
+      "value": "com/whatsapp/superpack/WhatsAppObiInputStream"
+    }, 
+    {
+      "address": "00103a3d", 
+      "value": "could not find java/io/InputStream"
+    }, 
+    {
+      "address": "00103a76", 
+      "value": "Superpack"
+    }, 
+    {
+      "address": "00103a84", 
+      "value": "could not extract asset path"
+    }, 
+    {
+      "address": "00103afb", 
+      "value": "decompress_with_ref"
+    }, 
+    {
+      "address": "00103b0f", 
+      "value": "Failed to read superpacked data to buffer: invalid compressed size"
+    }, 
+    {
+      "address": "00103b52", 
+      "value": "getFileCountNative"
+    }, 
+    {
+      "address": "00103b65", 
+      "value": "openRawBytesNative"
+    }, 
+    {
+      "address": "00103b78", 
+      "value": "openBytesNative"
+    }, 
+    {
+      "address": "00103b88", 
+      "value": "openObArchiveBytesNative"
+    }, 
+    {
+      "address": "00103ba1", 
+      "value": "getFilePtrNative"
+    }, 
+    {
+      "address": "00103bb2", 
+      "value": "openNative"
+    }, 
+    {
+      "address": "00103bbd", 
+      "value": "openInputStreamNative"
+    }, 
+    {
+      "address": "00103bd3", 
+      "value": "getFileSizeNative"
+    }, 
+    {
+      "address": "00103be5", 
+      "value": "closeNative"
+    }, 
+    {
+      "address": "00103bf1", 
+      "value": "readNative"
+    }, 
+    {
+      "address": "00103bfc", 
+      "value": "Could not read openbox archive"
+    }, 
+    {
+      "address": "00103caa", 
+      "value": "com/whatsapp/superpack/WhatsAppOpenboxArchive"
+    }, 
+    {
+      "address": "00103cd8", 
+      "value": "could not find java/io/OutputStream.write"
+    }, 
+    {
+      "address": "00103da5", 
+      "value": "could not parse file"
+    }, 
+    {
+      "address": "00103dc9", 
+      "value": "decompress_range"
+    }, 
+    {
+      "address": "00103e02", 
+      "value": "_superpack_archive_end"
+    }, 
+    {
+      "address": "00103eb0", 
+      "value": "mmap failed"
+    }, 
+    {
+      "address": "00103ebc", 
+      "value": "dlopen failed"
+    }, 
+    {
+      "address": "00103efd", 
+      "value": "could not find java/io/InputStream.read"
+    }, 
+    {
+      "address": "00103f64", 
+      "value": "Unknown compression type %d"
+    }, 
+    {
+      "address": "00103fcf", 
+      "value": "Failed to allocate buffer of size %zu to decompress superpack data"
+    }, 
+    {
+      "address": "00104012", 
+      "value": "Failed to allocate buffer of size %zu to read superpacked data"
+    }, 
+    {
+      "address": "001040a6", 
+      "value": "(Ljava/io/InputStream;I)J"
+    }, 
+    {
+      "address": "001040ee", 
+      "value": "Failed to read superpacked stream header to buffer: reached EOF"
+    }, 
+    {
+      "address": "00104133", 
+      "value": "could not open asset, is it compressed?"
+    }, 
+    {
+      "address": "0010415b", 
+      "value": "Base spk is missing a required stream, was a correct spk provided?"
+    }, 
+    {
+      "address": "0010419e", 
+      "value": "Base stream table is NULL, was a base spk provided?"
+    }, 
+    {
+      "address": "001041d2", 
+      "value": "(Landroid/content/res/AssetManager;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)[Ljava/lang/String;"
+    }, 
+    {
+      "address": "00104290", 
+      "value": "(Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;"
+    }, 
+    {
+      "address": "001042df", 
+      "value": "(Landroid/content/res/AssetManager;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;"
+    }, 
+    {
+      "address": "001043f7", 
+      "value": "Detailed stream mismatch information:"
+    }, 
+    {
+      "address": "0010444f", 
+      "value": "Could not find MemAvailable in /proc/meminfo to read available memory."
+    }, 
+    {
+      "address": "00104496", 
+      "value": "Could not open /proc/meminfo to read available memory."
+    }, 
+    {
+      "address": "001044eb", 
+      "value": "Failed to add stream xxh64 checksum."
+    }, 
+    {
+      "address": "00104510", 
+      "value": "No driver found for file type %s, is wrong superpack flavor used? check xplat/superpack/APP_FLAVOR_CONFIG.bzl."
+    }, 
+    {
+      "address": "0010457f", 
+      "value": "Can't recover with mmap for file %s, failing."
+    }, 
+    {
+      "address": "001045ad", 
+      "value": "Unpacking unsupported call site encoding."
+    }, 
+    {
+      "address": "001045d7", 
+      "value": "could not open '%s' for reading."
+    }, 
+    {
+      "address": "001046c8", 
+      "value": "Failed to mmap spo file."
+    }, 
+    {
+      "address": "00104727", 
+      "value": "Epsilon is not used for compression but provided."
+    }, 
+    {
+      "address": "001047ba", 
+      "value": "Checksum mismatch for stream %d - %lu %lu\\n"
+    }, 
+    {
+      "address": "001047e5", 
+      "value": "Error: Read %zd/%zu bytes: Could not read stream %u\\n"
+    }, 
+    {
+      "address": "001048c0", 
+      "value": "Failed to unpack superpack archive: unpacking failed for %s\\n"
+    }, 
+    {
+      "address": "00104960", 
+      "value": "Failed to unpack superpack archive: checksum mismatch on file %s\\n"
+    }, 
+    {
+      "address": "001049ed", 
+      "value": "Context %d already allocated, cannot allocate again\\n"
+    }, 
+    {
+      "address": "00104b06", 
+      "value": "Native libraries checksums: (file_offset, checksum)\\n"
+    }, 
+    {
+      "address": "00104b3b", 
+      "value": "Superpack version differ (library version is %d.%d.%d, archive version is %d.%d.%d)\\n"
+    }, 
+    {
+      "address": ".shstrtab::00000044", 
+      "value": "u8\"pre_merge_jni_libraries"
+    }, 
+    {
+      "address": ".shstrtab::00000064", 
+      "value": "u8\".eh_frame_hdr"
+    }, 
+    {
+      "address": ".shstrtab::000000c6", 
+      "value": "u8\".eh_frame"
+    }
+  ]
+}

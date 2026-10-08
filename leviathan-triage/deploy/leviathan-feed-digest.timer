@@ -1,0 +1,12 @@
+[Unit]
+Description=leviathan-feed free daily digest timer (09:00 New York)
+Requires=leviathan-feed-digest.service
+
+[Timer]
+# 13:00 UTC = 09:00 US Eastern (the morning-ritual skim window)
+OnCalendar=*-*-* 13:00:00 UTC
+RandomizedDelaySec=60
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,70 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${DB_NAME:-leviathan}
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASS:-postgres}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-postgres} -d ${DB_NAME:-leviathan}"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      DB_NAME: ${DB_NAME:-leviathan}
+      DB_USER: ${DB_USER:-postgres}
+      DB_PASS: ${DB_PASS:-postgres}
+      DB_HOST: db
+      DB_PORT: "5432"
+      ADMIN_TOKEN: ${ADMIN_TOKEN:?set ADMIN_TOKEN in .env}
+      SHODAN_API_KEY: ${SHODAN_API_KEY:-}
+      NVD_API_KEY: ${NVD_API_KEY:-}
+      PAY_ADDRESS: ${PAY_ADDRESS:-}
+      PAY_ADDRESS_TON: ${PAY_ADDRESS_TON:-}
+      PAY_ADDRESS_TRON: ${PAY_ADDRESS_TRON:-}
+      PAY_ADDRESS_SOL: ${PAY_ADDRESS_SOL:-}
+      PAY_ADDRESS_BTC: ${PAY_ADDRESS_BTC:-}
+      WALLET_PAY_TOKEN: ${WALLET_PAY_TOKEN:-}
+      DISCORD_WEBHOOK_URL: ${DISCORD_WEBHOOK_URL:-}
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # Keyless auto-settle: polls public chain APIs (toncenter/tronscan/
+  # blockstream) and promotes paid invoices. Stablecoin rails (USDT-TON,
+  # USDT-TRON) settle automatically on exact amount; TON/BTC report
+  # candidates for a one-keystroke admin confirm. No API keys, no KYB.
+  settle-watch:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["python", "-m", "billing.settle_watch", "--loop", "60"]
+    environment:
+      DB_NAME: ${DB_NAME:-leviathan}
+      DB_USER: ${DB_USER:-postgres}
+      DB_PASS: ${DB_PASS:-postgres}
+      DB_HOST: db
+      DB_PORT: "5432"
+      PAY_ADDRESS_TON: ${PAY_ADDRESS_TON:-}
+      PAY_ADDRESS_TRON: ${PAY_ADDRESS_TRON:-}
+      PAY_ADDRESS_SOL: ${PAY_ADDRESS_SOL:-}
+      PAY_ADDRESS_BTC: ${PAY_ADDRESS_BTC:-}
+      DISCORD_WEBHOOK_URL: ${DISCORD_WEBHOOK_URL:-}
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  pgdata:

@@ -1,0 +1,11 @@
+[Unit]
+Description=huginn-lvx pilot timer (2x daily, free-tier safe)
+
+[Timer]
+# 09:20 + 21:20 UTC - max 2 posts/day, far under the free tier write cap.
+OnCalendar=*-*-* 09,21:20:00 UTC
+RandomizedDelaySec=120
+Persistent=true
+
+[Install]
+WantedBy=timers.target

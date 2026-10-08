@@ -1,0 +1,364 @@
+{
+  "decompress_functions": [
+    {
+      "address": "0010cf72", 
+      "signature": "undefined Java_com_facebook_superpack_AssetDecompressor_testDecompressorLibraryUsable(void)", 
+      "param_count": 0, 
+      "first_bytes": "50 4c 8d 44 24 04 41 c6 40 02 53 66 41 c7 00 47 77 48 8b 07 6a 03 59 48 89 d6 31 d2 ff 90 80 06 00 00 58 c3", 
+      "size": 35, 
+      "name": "Java_com_facebook_superpack_AssetDecompressor_testDecompressorLibraryUsable", 
+      "callers": [
+        "Entry Point", 
+        "00106b3c", 
+        "00107c18"
+      ]
+    }
+  ], 
+  "program": "libsuperpack.so", 
+  "all_strings": [
+    {
+      "address": "001011ac", 
+      "value": "u8\"Java_com_facebook_superpack_AssetDecompressor_testDecompressorLibraryUsable"
+    }, 
+    {
+      "address": "001014e7", 
+      "value": "u8\"libsuperpack.so"
+    }, 
+    {
+      "address": "00102e9e", 
+      "value": "version info missing in library"
+    }, 
+    {
+      "address": "00102ebe", 
+      "value": "loading so archive library"
+    }, 
+    {
+      "address": "00102ed9", 
+      "value": "re-using previous load of so archive library"
+    }, 
+    {
+      "address": "00102f06", 
+      "value": "decompress_legacy"
+    }, 
+    {
+      "address": "00102f76", 
+      "value": "%s Expected stream %d size %zu, got %zu, input data %p, output data %p, num active %d, halt_all %d, requested_bytes %zu"
+    }, 
+    {
+      "address": "0010301e", 
+      "value": "  Stream ID: %u, UUID: %u, Size: %zu"
+    }, 
+    {
+      "address": "00103071", 
+      "value": "Streams checksum mismatch: %lu vs %lu"
+    }, 
+    {
+      "address": "001030e0", 
+      "value": "Error decompressing superpack streams, expected %u but decompressed %u"
+    }, 
+    {
+      "address": "00103140", 
+      "value": "_superpack_archive_start"
+    }, 
+    {
+      "address": "00103159", 
+      "value": "superpack archive is corrupt"
+    }, 
+    {
+      "address": "00103176", 
+      "value": "re-initializing stream adapters after failed attempt"
+    }, 
+    {
+      "address": "001031cf", 
+      "value": "decompress_with_format"
+    }, 
+    {
+      "address": "001031e6", 
+      "value": "decompress_instructions_with_format"
+    }, 
+    {
+      "address": "0010320a", 
+      "value": "decompress_strings_with_format"
+    }, 
+    {
+      "address": "00103250", 
+      "value": "decompress"
+    }, 
+    {
+      "address": "001032fa", 
+      "value": "Partial decompression is not yet supported for pixels"
+    }, 
+    {
+      "address": "00103330", 
+      "value": "Openbox cannot decompress, models (%d, %d) required but binary is not built with support for some of these models"
+    }, 
+    {
+      "address": "001033f2", 
+      "value": "Failed to load archive so: %s"
+    }, 
+    {
+      "address": "00103410", 
+      "value": "com/facebook/superpack/AssetDecompressor"
+    }, 
+    {
+      "address": "00103459", 
+      "value": "SP2 decompression failed for a stream with %d error"
+    }, 
+    {
+      "address": "001035c8", 
+      "value": "Failed to read superpacked data to buffer"
+    }, 
+    {
+      "address": "0010360c", 
+      "value": "dlopen failed, decompressed from cached buffer"
+    }, 
+    {
+      "address": "00103658", 
+      "value": "Bad OB header"
+    }, 
+    {
+      "address": "00103666", 
+      "value": "Invalid stream %d checkpoint %d, value %zu exceeds uncompressed size %zu. Please check for errors in the layer below Superpack, e.g. Zip"
+    }, 
+    {
+      "address": "001036ef", 
+      "value": "Entry %d has size 0. Please check for errors in the layer below Superpack, e.g. Zip"
+    }, 
+    {
+      "address": "00103743", 
+      "value": "Error reading Superpack archive (checkpoints) from APK (%d). Please check for errors in the layer below Superpack, e.g. Zip"
+    }, 
+    {
+      "address": "001037bf", 
+      "value": "Error reading Superpack archive (stream header) from APK (%d). Please check for errors in the layer below Superpack, e.g. Zip"
+    }, 
+    {
+      "address": "0010388c", 
+      "value": "decompress_from_so"
+    }, 
+    {
+      "address": "0010389f", 
+      "value": "decompress_range_from_so"
+    }, 
+    {
+      "address": "001038b8", 
+      "value": "libsuperpack.so"
+    }, 
+    {
+      "address": "001038fc", 
+      "value": "com/facebook/superpack/AssetDecompressionException"
+    }, 
+    {
+      "address": "00103985", 
+      "value": "could not allocate buffered_java_stream"
+    }, 
+    {
+      "address": "001039ad", 
+      "value": "could not adapt input stream"
+    }, 
+    {
+      "address": "001039ca", 
+      "value": "could not create buffered stream"
+    }, 
+    {
+      "address": "001039eb", 
+      "value": "could not find java/io/OutputStream"
+    }, 
+    {
+      "address": "00103a0f", 
+      "value": "com/whatsapp/superpack/WhatsAppObiInputStream"
+    }, 
+    {
+      "address": "00103a3d", 
+      "value": "could not find java/io/InputStream"
+    }, 
+    {
+      "address": "00103a76", 
+      "value": "Superpack"
+    }, 
+    {
+      "address": "00103afb", 
+      "value": "decompress_with_ref"
+    }, 
+    {
+      "address": "00103b0f", 
+      "value": "Failed to read superpacked data to buffer: invalid compressed size"
+    }, 
+    {
+      "address": "00103b88", 
+      "value": "openObArchiveBytesNative"
+    }, 
+    {
+      "address": "00103bbd", 
+      "value": "openInputStreamNative"
+    }, 
+    {
+      "address": "00103bfc", 
+      "value": "Could not read openbox archive"
+    }, 
+    {
+      "address": "00103c1b", 
+      "value": "could not append file to archive"
+    }, 
+    {
+      "address": "00103c3c", 
+      "value": "could not extract files from archive"
+    }, 
+    {
+      "address": "00103c61", 
+      "value": "could not extract file from archive"
+    }, 
+    {
+      "address": "00103c85", 
+      "value": "could not create a reference archive"
+    }, 
+    {
+      "address": "00103caa", 
+      "value": "com/whatsapp/superpack/WhatsAppOpenboxArchive"
+    }, 
+    {
+      "address": "00103cd8", 
+      "value": "could not find java/io/OutputStream.write"
+    }, 
+    {
+      "address": "00103dba", 
+      "value": "Not an OB file"
+    }, 
+    {
+      "address": "00103dc9", 
+      "value": "decompress_range"
+    }, 
+    {
+      "address": "00103e02", 
+      "value": "_superpack_archive_end"
+    }, 
+    {
+      "address": "00103e19", 
+      "value": "archive start: %ld length: %ld"
+    }, 
+    {
+      "address": "00103e38", 
+      "value": "version of the spk is not supported"
+    }, 
+    {
+      "address": "00103efd", 
+      "value": "could not find java/io/InputStream.read"
+    }, 
+    {
+      "address": "00103f25", 
+      "value": "Could not open archive: %d/%d/%d"
+    }, 
+    {
+      "address": "00103f46", 
+      "value": "Could not open archive: %d/%d"
+    }, 
+    {
+      "address": "00103f64", 
+      "value": "Unknown compression type %d"
+    }, 
+    {
+      "address": "00103fcf", 
+      "value": "Failed to allocate buffer of size %zu to decompress superpack data"
+    }, 
+    {
+      "address": "00104012", 
+      "value": "Failed to allocate buffer of size %zu to read superpacked data"
+    }, 
+    {
+      "address": "001040a6", 
+      "value": "(Ljava/io/InputStream;I)J"
+    }, 
+    {
+      "address": "001040ee", 
+      "value": "Failed to read superpacked stream header to buffer: reached EOF"
+    }, 
+    {
+      "address": "00104133", 
+      "value": "could not open asset, is it compressed?"
+    }, 
+    {
+      "address": "0010415b", 
+      "value": "Base spk is missing a required stream, was a correct spk provided?"
+    }, 
+    {
+      "address": "0010419e", 
+      "value": "Base stream table is NULL, was a base spk provided?"
+    }, 
+    {
+      "address": "00104290", 
+      "value": "(Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;"
+    }, 
+    {
+      "address": "001043f7", 
+      "value": "Detailed stream mismatch information:"
+    }, 
+    {
+      "address": "0010441d", 
+      "value": "Detailed file mismatch information:"
+    }, 
+    {
+      "address": "001044eb", 
+      "value": "Failed to add stream xxh64 checksum."
+    }, 
+    {
+      "address": "00104510", 
+      "value": "No driver found for file type %s, is wrong superpack flavor used? check xplat/superpack/APP_FLAVOR_CONFIG.bzl."
+    }, 
+    {
+      "address": "00104622", 
+      "value": "Failed to get options from spo archive."
+    }, 
+    {
+      "address": "0010464a", 
+      "value": "Failed to create an empty ref archive."
+    }, 
+    {
+      "address": "00104727", 
+      "value": "Epsilon is not used for compression but provided."
+    }, 
+    {
+      "address": "001047ba", 
+      "value": "Checksum mismatch for stream %d - %lu %lu\\n"
+    }, 
+    {
+      "address": "001047e5", 
+      "value": "Error: Read %zd/%zu bytes: Could not read stream %u\\n"
+    }, 
+    {
+      "address": "00104897", 
+      "value": "Failed to apply epsilon archive options\\n"
+    }, 
+    {
+      "address": "001048c0", 
+      "value": "Failed to unpack superpack archive: unpacking failed for %s\\n"
+    }, 
+    {
+      "address": "00104910", 
+      "value": "Failed to record checkpoint for file %s\\n"
+    }, 
+    {
+      "address": "00104960", 
+      "value": "Failed to unpack superpack archive: checksum mismatch on file %s\\n"
+    }, 
+    {
+      "address": "001049a2", 
+      "value": "Error getting epsilon options from an archive: %s\\n"
+    }, 
+    {
+      "address": "00104a22", 
+      "value": "Failed to get options from spo archive\\n"
+    }, 
+    {
+      "address": "00104b3b", 
+      "value": "Superpack version differ (library version is %d.%d.%d, archive version is %d.%d.%d)\\n"
+    }, 
+    {
+      "address": ".shstrtab::00000072", 
+      "value": "u8\".gnu.version_r"
+    }, 
+    {
+      "address": ".shstrtab::00000098", 
+      "value": "u8\".gnu.version"
+    }
+  ]
+}

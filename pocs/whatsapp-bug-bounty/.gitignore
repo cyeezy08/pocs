@@ -1,0 +1,39 @@
+# Ignore large APK and backup binaries
+*.apk
+*.idsig
+*.ab
+
+# Ignore decompilation and project workspaces
+ws_apktool/
+ws_output/
+syfe_apktool/
+syfe_output/
+ghidra_project/
+
+# Ignore unpacked/decompressed native assets
+analysis/extracted_libs/
+analysis/so_files/
+analysis/smali/
+analysis/superpack/
+findings/native_analysis/
+
+# Ignore exploit/fuzz generated outputs
+fuzz/crafted_gifs/
+exploit/build/
+exploit/gen/
+exploit/exploit-signed.apk
+exploit/exploit-signed.apk.idsig
+
+# Ghidra project binaries
+*.rep/
+*.gbf
+*.prp
+*.bak
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db

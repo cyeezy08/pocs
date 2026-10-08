@@ -1,0 +1,15 @@
+[Unit]
+Description=leviathan-feed Huginn X post (daily digest -> X)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=leviathan
+Group=leviathan
+EnvironmentFile=/opt/leviathan-feed/.env
+ExecStart=/opt/leviathan-feed/venv/bin/leviathan-triage tweet
+WorkingDirectory=/opt/leviathan-feed
+
+[Install]
+WantedBy=multi-user.target

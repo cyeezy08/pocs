@@ -1,0 +1,9 @@
+.venv/
+demo_store/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+dist/
+build/
+.surfacediff/

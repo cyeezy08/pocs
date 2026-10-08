@@ -1,0 +1,29 @@
+name: CI
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Test (py${{ matrix.python }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ["3.9", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          version: latest
+          enable-cache: true
+      - run: uv python install ${{ matrix.python }}
+      - run: uv sync --group dev
+      - name: Test
+        run: uv run pytest -q --tb=short
+        env:
+          HUG_STATE_DIR: ${{ runner.temp }}/huginn-state

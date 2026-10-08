@@ -1,0 +1,5 @@
+vpn.example.com
+mail.example.com
+dev.example.com
+staging.example.com
+s3-backup.example.com

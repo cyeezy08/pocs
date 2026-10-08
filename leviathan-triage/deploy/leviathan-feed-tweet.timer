@@ -1,0 +1,12 @@
+[Unit]
+Description=leviathan-feed Huginn X post timer (daily, after the digest)
+Requires=leviathan-feed-tweet.service
+
+[Timer]
+# 5 minutes after the 13:00 UTC digest - X post goes out after Discord has it
+OnCalendar=*-*-* 13:05:00 UTC
+RandomizedDelaySec=60
+Persistent=true
+
+[Install]
+WantedBy=timers.target

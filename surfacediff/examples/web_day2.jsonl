@@ -1,0 +1,4 @@
+{"url":"https://vpn.example.com","status_code":200,"title":"SSL VPN","webserver":"nginx","tech":["nginx"]}
+{"url":"https://mail.example.com","status_code":403,"title":"","webserver":"apache","tech":["apache","php"]}
+{"url":"https://dev.example.com","status_code":404,"title":"","webserver":"nginx","tech":["nginx"]}
+{"url":"https://staging.example.com","status_code":200,"title":"Staging","webserver":"nginx","tech":["nginx","react"]}

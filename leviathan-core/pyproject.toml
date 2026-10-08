@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leviathan-core"
+version = "0.1.0"
+description = "Explainable exposure correlation on registered assets - feeds in, proof-of-exposure queue out. Passive, authorization-gated."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "cyeezy08" }]
+keywords = ["security", "exposure-management", "ctem", "kev", "epss", "cve"]
+dependencies = [
+    "requests>=2.31",
+    "PyYAML>=6.0",
+]
+
+[project.scripts]
+leviathan = "leviathan_core.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

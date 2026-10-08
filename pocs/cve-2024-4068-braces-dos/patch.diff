@@ -1,0 +1,60 @@
+diff --git a/lib/expand.js b/lib/expand.js
+index 35b2c41..989e548 100644
+--- a/lib/expand.js
++++ b/lib/expand.js
+@@ -33,6 +33,17 @@ const append = (queue = '', stash = '', enclose = false) => {
+ const expand = (ast, options = {}) => {
+   const rangeLimit = options.rangeLimit === undefined ? 1000 : options.rangeLimit;
+ 
++  const queueLimit = (queue, stash, enclose) => {
++    if (rangeLimit === Infinity) return append(queue, stash, enclose);
++    const queueLength = queue ? [].concat(queue).length : 0;
++    const stashLength = [].concat(stash).length;
++    const nextLength = queueLength === 0 ? stashLength : (stashLength === 0 ? queueLength : queueLength * stashLength);
++    if (nextLength > rangeLimit) {
++      throw new RangeError('expanded array length exceeds range limit. Use options.rangeLimit to increase or disable the limit.');
++    }
++    return append(queue, stash, enclose);
++  };
++
+   const walk = (node, parent = {}) => {
+     node.queue = [];
+ 
+@@ -45,12 +56,12 @@ const expand = (ast, options = {}) => {
+     }
+ 
+     if (node.invalid || node.dollar) {
+-      q.push(append(q.pop(), stringify(node, options)));
++      q.push(queueLimit(q.pop(), stringify(node, options)));
+       return;
+     }
+ 
+     if (node.type === 'brace' && node.invalid !== true && node.nodes.length === 2) {
+-      q.push(append(q.pop(), ['{}']));
++      q.push(queueLimit(q.pop(), ['{}']));
+       return;
+     }
+ 
+@@ -66,7 +77,7 @@ const expand = (ast, options = {}) => {
+         range = stringify(node, options);
+       }
+ 
+-      q.push(append(q.pop(), range));
++      q.push(queueLimit(q.pop(), range));
+       node.nodes = [];
+       return;
+     }
+@@ -90,12 +101,12 @@ const expand = (ast, options = {}) => {
+       }
+ 
+       if (child.type === 'close') {
+-        q.push(append(q.pop(), queue, enclose));
++        q.push(queueLimit(q.pop(), queue, enclose));
+         continue;
+       }
+ 
+       if (child.value && child.type !== 'open') {
+-        queue.push(append(queue.pop(), child.value));
++        queue.push(queueLimit(queue.pop(), child.value));
+         continue;
+       }

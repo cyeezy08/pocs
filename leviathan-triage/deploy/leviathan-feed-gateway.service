@@ -1,0 +1,17 @@
+[Unit]
+Description=leviathan-feed gateway bot (slash commands + paywall)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=leviathan
+Group=leviathan
+EnvironmentFile=/opt/leviathan-feed/.env
+ExecStart=/opt/leviathan-feed/venv/bin/leviathan-triage gateway
+WorkingDirectory=/opt/leviathan-feed
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

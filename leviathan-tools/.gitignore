@@ -1,0 +1,11 @@
+.env
+*.key
+*.pem
+auth.json
+credentials.json
+__pycache__/
+*.pyc
+shodan_data/
+*.bin
+*.sqfs
+rootfs/
